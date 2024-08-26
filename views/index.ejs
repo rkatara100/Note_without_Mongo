@@ -29,9 +29,13 @@
                                     <h1 class="text-white text-3xl tracking-tighter" name="title">
                                           <%= val %>
                                     </h1>
-                                    <a href="/file/<%= val %>" class="text-blue-500 inline-block mt-3"
-                                          name="details">Read
-                                          More</a>
+                                    <div class="links w-full flex justify-between ">
+                                          <a href="/file/<%= val %>" class="text-blue-500 inline-block mt-3"
+                                                name="details">Read
+                                                More</a>
+                                          <a class="text-yellow-500 inline-block mt-3" href="/edit/<%= val%>">edit</a>
+                                    </div>
+
                               </div>
                               <% }); %>
                                     <% } else { %>
